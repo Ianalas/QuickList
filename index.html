@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>QuickList</title>
+</head>
+<body>
+  <header class="container">
+    <img src="./assets/logo.png" alt="logo-marca">
+  </header>
+  <main class="container">
+    <div class="head">
+      <span><i data-lucide="corner-down-left"></i>Voltar</span>
+      <h1>Compras da semana</h1>
+    </div>
+
+    <form class="created-item">
+      <input type="text" name="itemAdd" id="itemAdd" placeholder="Adicione um novo item">
+      <button type="submit">Adicionar item</button>
+    </form>
+
+    <ul class="list">
+    </ul>
+    <button id="RemoverTudo" type="button">Remover tudo</button>
+  </main>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>
