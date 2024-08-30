@@ -88,11 +88,20 @@ function sendMessage(msg) {
 allRemoveBtn.addEventListener('click', ()=>{
   try {
     let items = listaDeItens.querySelectorAll("li p");
-
+    
+    let count = 0;
     if(items.length > 0){
-      sendMessage(`${ items.length == 1 ?"O item selecionado foi removido" : "Os itens selecionados foram removidos"}`);
-    }
+      items.forEach(item => {
+        if(item.classList.contains("checkado")){
+          count++;
+        }
+      })
 
+      if(count > 0){
+        sendMessage(`${ count == 1 ?"O item selecionado foi removido" : "Os itens selecionados foram removidos"}`);
+        count = 0;
+      }
+    }
     for (let i = 0; i < items.length; i++) {
       let element = items[i];
         if(element.classList.contains("checkado")){

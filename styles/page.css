@@ -98,3 +98,15 @@ main{
     }
   }
 }
+
+@media (width <= 712px) {
+  .container{
+    width: 80%;
+  }
+  main{
+    & form{
+      grid-template-columns: 1fr;
+      margin-bottom: 2rem;
+    }
+  }
+}

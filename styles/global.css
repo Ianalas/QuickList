@@ -26,7 +26,6 @@
 html{
   font-family: var(--fonte);
   background-color: var(--bg-prim);
-  
 }
 
 h1{
@@ -53,8 +52,6 @@ span{
     background-color: var(--color-brand-hover);
   }
 }
-
-
 
 input:focus, input::selection{
   border: none;
